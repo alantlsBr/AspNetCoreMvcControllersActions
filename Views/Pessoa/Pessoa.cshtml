@@ -1,0 +1,44 @@
+﻿@using AspNetCoreMvcControllersActions.Models
+@model Pessoa
+@{ Layout = null;}
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Pessoas</title>
+    <link href="~/lib/twitter-bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+        <div class="row">
+
+            <div class="col-6  offset-3">
+
+                <form action="/" method="post">
+
+                    <div class="form-group">
+                        <label for="Nome">Nome</label>
+                        <input type="text" id="Nome" class="form-control" placeholder="Nome" value=@Model.Nome />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="Telefone">Telefone</label>
+                        <input type="text" id="Fone" class="form-control" placeholder="Fone" value=@Model.Telefone />
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="~/lib/jquery/jquery.min.js"></script>
+    <script src="~/lib/twitter-bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+</html>

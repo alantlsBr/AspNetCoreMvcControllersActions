@@ -1,0 +1,22 @@
+﻿@addTagHelper *,Microsoft.AspNetCore.Mvc.TagHelpers
+@using AspNetCoreMvcControllersActions.Models
+@model Pessoa
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+    <head>
+        <title>Formulario</title>
+    </head>
+
+    <body>
+        <h1>Formulario</h1>
+
+        <form asp-action="Formulario" method="post">
+            <input type="text" asp-for="Nome"/>
+            <input type="text" asp-for="Telefone" />
+            <input type="submit" name="Cadastrar" />
+        </form>
+
+    </body>
+
+</html>
